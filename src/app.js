@@ -4,8 +4,8 @@ import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 dotenv.config();
 
-// 🆕 Importamos la función setupSwagger desde nuestro nuevo archivo
-import { setupSwagger } from './utils/swagger.js'; // Asegúrate que la ruta sea correcta
+
+import { setupSwagger } from './utils/swagger.js'; 
 
 
 import usersRouter from './routes/users.router.js';
@@ -33,7 +33,7 @@ connectMongoDB()
 
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // Es bueno mantener este middleware
+app.use(express.urlencoded({ extended: true })); 
 app.use(cookieParser());
 
 app.use('/api/users',usersRouter);
@@ -43,7 +43,14 @@ app.use('/api/sessions',sessionsRouter);
 
 app.use('/api/mocks', mocksRouter); 
 
-// 🆕 Configuración de Swagger UI: Llamamos a la función setupSwagger
-setupSwagger(app); // Pasamos la instancia de Express 'app'
 
-app.listen(PORT,()=>console.log(`Listening on ${PORT}`))
+setupSwagger(app); 
+
+
+export default app; 
+
+
+if (process.env.NODE_ENV !== 'test') { // 👈 🚦
+    app.listen(PORT,()=>console.log(`Listening on ${PORT}`))
+}
+
