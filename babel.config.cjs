@@ -4,9 +4,9 @@ module.exports = {
       '@babel/preset-env',
       {
         targets: {
-          node: 'current' // Asegura compatibilidad con tu versión de Node.js
+          node: 'current' 
         },
-        modules: false // Muy importante: Le dice a Babel que no transforme los módulos ES (import/export) a CommonJS
+        modules: false 
       }
     ]
   ]
