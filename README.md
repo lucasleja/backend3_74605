@@ -144,4 +144,4 @@ https://hub.docker.com/repository/docker/lucasleja/mi-servidor-node/general
 
 
 ✉️ Contacto
-Para cualquier consulta o sugerencia, puedes contactar al equipo de desarrollo en: contacto@mi-dominio.com (o tu email de contacto).
+Para cualquier consulta o sugerencia, puedes contactar al equipo de desarrollo en: lejarragalucas@gmail.com
