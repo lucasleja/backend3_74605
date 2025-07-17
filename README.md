@@ -111,7 +111,7 @@ Esto ejecutará todos los tests definidos en la carpeta test/.
 🤖 Módulos de Mocking
 El proyecto incluye endpoints especiales para generar datos de prueba, lo cual es muy útil para el desarrollo y las pruebas.
 
-src/mocks/users.js: Genera 50 usuarios de prueba con datos aleatorios (nombre, email, contraseña encriptada "coder123", rol "user" o "admin", y array de pets vacío).
+src/mocks/users.js: Genera 50 usuarios de prueba con datos aleatorios
 
 Endpoint: GET /api/mocks/mockingusers
 
